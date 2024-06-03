@@ -1,23 +1,24 @@
 import { useState } from "react";
+import Logo from "../../assets/Logo.png";
 
 const Navbar: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [isModalOpen, setIsModalOpen] = useState(false);
+  // const [isModalOpen, setIsModalOpen] = useState(false);
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
 
-  const toggleModal = () => {
-    setIsModalOpen(!isModalOpen);
-  };
+  // const toggleModal = () => {
+  //   setIsModalOpen(!isModalOpen);
+  // };
 
-  const handleOverlayClick = (e: React.MouseEvent<HTMLDivElement>) => {
-    if (e.target === e.currentTarget) {
-      // If the click occurs on the overlay (not on the modal content), close the modal
-      toggleModal();
-    }
-  };
+  // const handleOverlayClick = (e: React.MouseEvent<HTMLDivElement>) => {
+  //   if (e.target === e.currentTarget) {
+  //     // If the click occurs on the overlay (not on the modal content), close the modal
+  //     toggleModal();
+  //   }
+  // };
   return (
     <>
       <nav className="bg-[#F3F2F1] border-gray-200 dark:bg-gray-900">
@@ -26,11 +27,7 @@ const Navbar: React.FC = () => {
             href="/"
             className="flex items-center space-x-3 rtl:space-x-reverse"
           >
-            <img
-              src="src/assets/Logo.png"
-              className="h-14"
-              alt="Flowbite Logo"
-            />
+            <img src={Logo} className="h-14" alt="Flowbite Logo" />
           </a>
           <button
             onClick={toggleMenu}
