@@ -3,6 +3,7 @@ import BMI from "../BMI";
 import Feature from "../Feature";
 import Instruction from "../Instruction";
 import Mobile from "../Mobile";
+import Story from "../Story";
 
 const Homepage: React.FC = () => {
   return (
@@ -12,6 +13,7 @@ const Homepage: React.FC = () => {
       <BMI />
       <Mobile />
       <Feature />
+      <Story />
     </>
   );
 };
