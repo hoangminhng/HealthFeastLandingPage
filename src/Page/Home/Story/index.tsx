@@ -13,7 +13,7 @@ const tabs: TabProps[] = [
   {
     id: "LeftIcon",
     label: (
-      <ChevronLeftIcon className="md:h-10 md:w-10 w-5 h-5 text-[#2E2E2E] mx-2" />
+      <ChevronLeftIcon className="md:h-10 md:w-10 w-4 h-4 text-[#2E2E2E] mx-2" />
     ),
     content: (
       <div className="flex flex-col items-start lg:items-center">
@@ -31,7 +31,7 @@ const tabs: TabProps[] = [
   {
     id: "RightIcon",
     label: (
-      <ChevronRightIcon className="md:h-10 md:w-10 w-5 h-5 text-[#2E2E2E] mx-2" />
+      <ChevronRightIcon className="md:h-10 md:w-10 w-4 h-4 text-[#2E2E2E] mx-2" />
     ),
     content: (
       <div className="flex flex-col items-start lg:items-center">
@@ -65,7 +65,7 @@ const Story: React.FC = () => {
           className="inset-0 w-full h-full object-cover"
         />
         <div className="absolute inset-0 grid w-full place-items-stretch">
-          <div className="flex flex-col items-start lg:items-center w-4/5 md:w-3/4 lg:w-2/4 text-start justify-center p-4">
+          <div className="flex flex-col items-start lg:items-center w-4/5 md:w-3/4 lg:w-2/4 text-start justify-center md:p-4 px-1">
             <div id="default-tab-content">
               {tabs.map((tab) => (
                 <div

@@ -11,6 +11,19 @@ const CarouselImage: React.FC = () => {
         placeholder=""
         onPointerEnterCapture={() => {}}
         onPointerLeaveCapture={() => {}}
+        navigation={({ setActiveIndex, activeIndex, length }) => (
+          <div className="absolute bottom-4 left-2/4 z-50 flex -translate-x-2/4 gap-2 hidden">
+            {new Array(length).fill("").map((_, i) => (
+              <span
+                key={i}
+                className={`block h-1 cursor-pointer rounded-2xl transition-all content-[''] ${
+                  activeIndex === i ? "w-8 bg-white" : "w-4 bg-white/50"
+                }`}
+                onClick={() => setActiveIndex(i)}
+              />
+            ))}
+          </div>
+        )}
       >
         <div className="relative h-full w-full">
           <img
@@ -19,7 +32,7 @@ const CarouselImage: React.FC = () => {
             className="w-full object-cover"
           />
           <div className="absolute inset-0 grid w-full place-items-center bg-black/75">
-            <div className="flex flex-col items-center w-4/5 md:w-3/4 lg:w-2/4 text-center justify-center p-4">
+            <div className="flex flex-col items-center w-4/5 md:w-3/4 lg:w-2/4 text-center justify-center md:p-4">
               <h2 className="text-base md:text-2xl font-medium text-[#9ABF5A]">
                 Healthfeast
               </h2>
@@ -71,13 +84,13 @@ const CarouselImage: React.FC = () => {
           />
           <div className="absolute inset-0 grid w-full items-center">
             <div className="flex flex-col items-start w-4/5 md:w-3/4 lg:w-2/4 pl-4 md:pl-12 lg:pl-20 text-left justify-center">
-              <h2 className="text-base md:text-2xl font-medium text-[#9ABF5A] mb-4">
+              <h2 className="text-base md:text-2xl font-medium text-[#9ABF5A] md:mb-4">
                 HealthFeast
               </h2>
               <h2 className="text-base md:text-2xl font-medium w-3/4 md:w-1/2 text-white">
                 Sẽ hỗ trợ bạn cảm thấy tốt hơn
               </h2>
-              <p className="mb-3 text-xs md:text-xl text-white w-full md:w-2/3 pb-2">
+              <p className="md:mb-3 text-xs md:text-xl text-white w-full md:w-2/3 md:pb-2">
                 Tính năng quét món ăn Việt Nam và xác định lượng calo. Tính năng
                 gợi ý thực đơn hàng ngày, hàng tuần. Nhiều tính năng hiệu quả
                 khác.
@@ -99,14 +112,14 @@ const CarouselImage: React.FC = () => {
           />
           <div className="absolute inset-0 grid w-full items-center">
             <div className="flex flex-col items-start w-4/5 md:w-3/4 lg:w-2/4 pl-4 md:pl-12 lg:pl-20 text-left justify-center">
-              <h2 className="text-base md:text-2xl font-medium text-[#9ABF5A] mb-4">
+              <h2 className="text-base md:text-2xl font-medium text-[#9ABF5A] md:mb-4">
                 HealthFeast
               </h2>
               <h2 className="text-base md:text-2xl font-medium w-4/5 text-white">
                 mang đến trải nghiệm thú vị hơn với các nhân vật vui nhộn đầy
                 màu sắc.
               </h2>
-              <p className="mb-3 text-xs md:text-xl text-white w-full md:w-2/3 pb-2">
+              <p className="md:mb-3 text-xs md:text-xl text-white w-full md:w-2/3 md:pb-2">
                 Mỗi nhân vật có màu sắc riêng đại diện cho các tính năng trong
                 ứng dụng Healthfeast.
               </p>
