@@ -30,7 +30,6 @@ const Navbar: React.FC = () => {
     { name: "Trang chủ", href: "/" },
     { name: "Về chúng tôi", href: "/about" },
     { name: "Liên hệ", href: "/contact" },
-    { name: "Đăng nhập", href: "#" },
   ];
 
   return (
@@ -91,14 +90,6 @@ const Navbar: React.FC = () => {
                   {item.name}
                 </li>
               ))}
-              <li>
-                <button
-                  type="button"
-                  className="bg-[#9ABF5A] font-medium rounded-lg text-sm px-5 py-2 text-center text-gray-900"
-                >
-                  Tham gia
-                </button>
-              </li>
             </ul>
           </div>
         </div>
