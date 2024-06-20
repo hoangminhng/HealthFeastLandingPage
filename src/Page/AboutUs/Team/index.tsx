@@ -52,7 +52,7 @@ const tabs: UserProps[] = [
   },
   {
     id: 7,
-    img: "https://randomuser.me/api/portraits/lego/3.jpg",
+    img: "https://drive.google.com/file/d/1-_Zo0Z3w9Lerf1OHPjY6s9xPFckd1cT8/view?usp=sharing",
     name: "Nguyễn Văn Dũng",
     position: "Graphic Design Faculty",
     Specialties: "Specialties: 2D, Animation, Branding, Packaging Design,",
@@ -85,7 +85,7 @@ const Team: React.FC = () => {
             <div className="flex flex-col items-center justify-center dark:bg-gray-800 mt-3 w-full">
               <img
                 className="rounded-full w-36 h-36"
-                src="https://randomuser.me/api/portraits/lego/3.jpg"
+                src={tab.img}
                 alt="Extra large avatar"
               />
               <div className="flex flex-col items-center">
