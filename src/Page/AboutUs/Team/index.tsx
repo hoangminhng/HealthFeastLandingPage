@@ -52,7 +52,7 @@ const tabs: UserProps[] = [
   },
   {
     id: 7,
-    img: "https://drive.google.com/file/d/1-_Zo0Z3w9Lerf1OHPjY6s9xPFckd1cT8/view?usp=sharing",
+    img: "https://randomuser.me/api/portraits/lego/3.jpg",
     name: "Nguyễn Văn Dũng",
     position: "Graphic Design Faculty",
     Specialties: "Specialties: 2D, Animation, Branding, Packaging Design,",
