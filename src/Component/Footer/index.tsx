@@ -1,6 +1,12 @@
 import Logo from "../../assets/Logo.png";
 
 const Footer: React.FC = () => {
+  const handleGooglePlayDownload = () => {
+    // URL of the APK file
+    const apkUrl =
+      "https://drive.google.com/file/d/15BERxzwGRKwje4y_EBqNyGCoMZSvP5QY/view?usp=sharing";
+    window.location.href = apkUrl;
+  };
   return (
     <>
       <div className="grid grid-cols-1 2xl:grid-cols-3 gap-4 my-4 mx-3">
@@ -64,15 +70,15 @@ const Footer: React.FC = () => {
         </div>
 
         <ul className="flex flex-col md:flex-row items-center justify-center lg:justify-around space-y-4 md:space-y-0">
-          <li>
+          {/* <li>
             <button
               type="button"
               className="bg-[#9ABF5A] font-medium rounded-lg text-sm px-6 py-4 text-center text-gray-900"
             >
               Tham gia
             </button>
-          </li>
-          <li>
+          </li> */}
+          {/* <li>
             <button
               type="button"
               className="text-white bg-[#050708] hover:bg-[#050708]/90 focus:ring-4 focus:outline-none focus:ring-[#050708]/50 font-medium rounded-lg text-sm px-2.5 py-0.5 text-center inline-flex items-center dark:focus:ring-[#050708]/50 dark:hover:bg-[#050708]/30"
@@ -97,9 +103,10 @@ const Footer: React.FC = () => {
                 <h4 className="text-xl font-bold dark:text-white">App store</h4>
               </div>
             </button>
-          </li>
+          </li> */}
           <li>
             <button
+              onClick={handleGooglePlayDownload}
               type="button"
               className="text-white bg-[#050708] hover:bg-[#050708]/90 focus:ring-4 focus:outline-none focus:ring-[#050708]/50 font-medium rounded-lg text-sm px-2.5 py-0.5 text-center inline-flex items-center dark:focus:ring-[#050708]/50 dark:hover:bg-[#050708]/30"
             >

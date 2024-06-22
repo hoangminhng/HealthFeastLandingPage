@@ -5,6 +5,12 @@ import HomeImage_3 from "../../assets/HomeImage_3.png";
 import HomeImage_4 from "../../assets/HomeImage_4.png";
 
 const CarouselImage: React.FC = () => {
+  const handleGooglePlayDownload = () => {
+    // URL of the APK file
+    const apkUrl =
+      "https://drive.google.com/file/d/15BERxzwGRKwje4y_EBqNyGCoMZSvP5QY/view?usp=sharing";
+    window.location.href = apkUrl;
+  };
   return (
     <div className="overflow-y-hidden w-full h-full">
       <Carousel
@@ -44,6 +50,7 @@ const CarouselImage: React.FC = () => {
                 “Giữ gìn sức khỏe, sống cuộc sống của bạn”
               </p>
               <button
+                onClick={handleGooglePlayDownload}
                 type="button"
                 className="bg-[#9ABF5A] font-medium rounded-lg text-xs md:text-sm px-5 py-2 text-center text-gray-900"
               >
@@ -68,6 +75,7 @@ const CarouselImage: React.FC = () => {
                 sức khoẻ tốt hơn.
               </p>
               <button
+                onClick={handleGooglePlayDownload}
                 type="button"
                 className="bg-[#9ABF5A] font-medium rounded-lg text-xs md:text-sm px-5 py-2 text-center text-gray-900"
               >
@@ -96,6 +104,7 @@ const CarouselImage: React.FC = () => {
                 khác.
               </p>
               <button
+                onClick={handleGooglePlayDownload}
                 type="button"
                 className="bg-[#9ABF5A] font-medium rounded-lg text-xs md:text-sm px-5 py-2 text-center text-gray-900"
               >
@@ -124,6 +133,7 @@ const CarouselImage: React.FC = () => {
                 ứng dụng Healthfeast.
               </p>
               <button
+                onClick={handleGooglePlayDownload}
                 type="button"
                 className="bg-[#9ABF5A] font-medium rounded-lg text-xs md:text-sm px-5 py-2 text-center text-gray-900"
               >
