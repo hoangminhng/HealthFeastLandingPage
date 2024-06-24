@@ -12,7 +12,7 @@ const Feature: React.FC = () => {
         <div className="absolute inset-0 flex w-full items-center justify-end">
           <div className="flex flex-col items-end w-4/5 md:w-3/4 lg:w-2/4 pr-4 md:pl-12 lg:pl-20 text-left justify-center">
             <h2 className="text-xs md:text-4xl font-medium w-2/5 md:w-2/3 text-white">
-              Nhiều chức hiệu quả hơn của <span className="text-[#9ABF5A]">Healthfeast</span> đang chờ bạn
+              Nhiều chức năng hiệu quả hơn của <span className="text-[#9ABF5A]">Healthfeast</span> đang chờ bạn
               sử dụng
             </h2>
             <p className="hidden md:block md:text-xl text-white w-2/5 md:w-2/3 pb-2">
